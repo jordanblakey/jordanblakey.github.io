@@ -1,5 +1,7 @@
-# The personal portfolio of Jordan Blakey, showcasing design and development projects. 
-Currently under construction 1/4/2017.
+# The personal portfolio of Jordan Blakey 
+Currently under construction. (1/4/2017)
+
+## showcasing design and development projects. 
 
 ### My web skills
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/JordanBlakey/job-stack)
