@@ -12,8 +12,6 @@
     <!-- MOBILE SPECIFIC METAS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT -->
-    <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/triangles.min.js"></script>
@@ -49,19 +47,15 @@
         <div class="row">
             <div class="column masthead">
                 <a name="develop" id="develop"></a>
-                <!-- <h1>Jordan Blakey <br><span id="job-title">Full Stack Developer &amp; Designer</span></h1>
-                <h4>Crafting with the tools framing the internet of tomorrow's past.</h4> -->
-                <!-- <h1 class="cd-headline letters type"><span>Hi, I'm Jordan, a </span><span class="cd-words-wrapper"><b class="is-visible">Full Stack Developer.</b><b>UX Designer.</b><b>Graphic Artist.</b><b>Video Editor.</b></span></h1> -->
                 <h1 class="cd-headline letters type"><span>Hi, I'm Jordan. <br>I design &amp; develop </span><span class="cd-words-wrapper"><b class="is-visible">user interfaces.</b><b>landing pages.</b><b>corporate websites.</b><b>web applications.</b></span></h1>
-                <a class="button-primary" type="submit" href="#contact">Yes, I'm available for hire.</a>
-
-                <!-- <h4>Crafting with the tools framing tomorrow's internet.</h4> -->
+                <a class="button-primary" href="#contact">Yes, I'm available for hire.</a>
             </div>
         </div>
 
         <!-- DEVELOPMENT & STACKSHARE EMBED -->
         <div class="row">
             <div class="column">
+                <h1>Development <span style="color:red; font-size:18px;">Here are some technologies that I've worked with.</span></h1>
                 <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,2,3,4" href="https://embed.stackshare.io/stacks/embed/b7221fcd0f5a032ea63f248b51f0b0"></a>
             </div>
         </div>
@@ -78,39 +72,67 @@
                 <ul class="shots"></ul>
             </div>
         </div>
-
-        <!-- FORM -->
-        <form action="">
-            <div class="row">
-                <div class="column">
-                    <a name="contact" id="contact"></a>
-                    <h1>What can I help you with?</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="six columns">
-                    <label for="your-email">Your Email</label>
-                    <input class="u-full-width" type="email" placeholder="you@gmail.com" id="your-email">
-                </div>
-                <div class="six columns">
-                    <label for="">What is your quest?</label>
-                    <select class="u-full-width" type="text">
-                        <option value="Option 1">Recruitment</option>
-                        <option value="Option 2">Partnership Opportunity</option>
-                        <option value="Option 3">Freelance Inquiry</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <label for="">Ask me anything.</label>
-                    <textarea class="u-full-width"></textarea>
-                    <input class="button-primary" type="submit" value="Send">
-                </div>
-            </div>
-        </form>
-
     </div>
+    <!-- CONTACT -->
+    <div class="container u-full-width">
+        <div class="container">
+            <div class="row">
+                <div class="column masthead">
+                    <h1>Want to work together?</h1>
+                    <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
+                    <a class="button-primary modal__trigger" type="submit" data-modal="#modal" name="contact" id="contact">Get started.</a>
+
+                    <!-- MODAL -->
+                    <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+                        <div class="modal__dialog">
+                            <div class="modal__content">
+                                <!-- FORM -->
+                                <form action="">
+                                    <div class="row">
+                                        <div class="column">
+                                            <h2>Ok, just a few <br>quick questions.</h2>
+
+
+                                            <p>After you introduce yourself and your project, I'll get in touch with you to schedule a time to chat. You should expect to hear from me in a day or so.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <label for="your-email">Your Email</label>
+                                            <input class="u-full-width" type="email" placeholder="you@gmail.com" id="your-email">
+                                        </div>
+                                        <div class="six columns">
+                                            <label for="">Contact type?</label>
+                                            <select class="u-full-width" type="text">
+                                                <option value="Option 1">Recruitment</option>
+                                                <option value="Option 2">Partnership Opportunity</option>
+                                                <option value="Option 3">Freelance Inquiry</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column">
+                                            <label for="">Ask me anything.</label>
+                                            <textarea class="u-full-width"></textarea>
+                                            <input class="button-primary" type="submit" value="Send">
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!-- modal close button -->
+                                <a href="" class="modal__close demo-close">
+                                    &#10006;
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- JS -->
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -119,6 +141,7 @@
     <script src="js/responsive-nav.min.js"></script>
     <script src="js/headline.min.js"></script>
     <script src="js/ripple.min.js"></script>
+    <script src="js/material_modal.min.js"></script>
     <!-- <script src="js/app.min.js"></script> -->
 
     <!-- SCRIPT: Stackshare Embed -->
@@ -126,66 +149,66 @@
 
     <!-- SCRIPT: Dribble OAuth Scrape -->
     <script>
-        $.jribbble.setToken('2e868d0f0e982918df051f4d51abb6f80bcf19886ff34329156806997f262231');
+    $.jribbble.setToken('2e868d0f0e982918df051f4d51abb6f80bcf19886ff34329156806997f262231');
 
-        $.jribbble.users('jordanblakey').likes({
-            per_page: 30
-        }).then(function(likes) {
-            var html = [];
+    $.jribbble.users('jordanblakey').likes({
+        per_page: 30
+    }).then(function(likes) {
+        var html = [];
 
-            likes.forEach(function(like) {
-                html.push('<li class="shots--shot">');
-                html.push('<a href="' + like.shot.html_url + '" target="_blank">');
-                html.push('<img src="' + like.shot.images.normal + '">');
-                html.push('</a></li>');
-            });
-
-            $('.shots').html(html.join(''));
+        likes.forEach(function(like) {
+            html.push('<li class="shots--shot">');
+            html.push('<a href="' + like.shot.html_url + '" target="_blank">');
+            html.push('<img src="' + like.shot.images.normal + '">');
+            html.push('</a></li>');
         });
+
+        $('.shots').html(html.join(''));
+    });
     </script>
 
     <!-- SCRIPT: Responsive Nav -->
     <script>
-        var navigation = responsiveNav(".nav-collapse", {
-            animate: true, // Boolean: Use CSS3 transitions, true or false
-            transition: 284, // Integer: Speed of the transition, in milliseconds
-            label: "Menu", // String: Label for the navigation toggle
-            insert: "after", // String: Insert the toggle before or after the navigation
-            customToggle: "", // Selector: Specify the ID of a custom toggle
-            closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
-            openPos: "relative", // String: Position of the opened nav, relative or static
-            navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-            navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
-            jsClass: "js", // String: 'JS enabled' class which is added to <html> element
-            init: function() {}, // Function: Init callback
-            open: function() {}, // Function: Open callback
-            close: function() {} // Function: Close callback
-        });
+    var navigation = responsiveNav(".nav-collapse", {
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 284, // Integer: Speed of the transition, in milliseconds
+        label: "Menu", // String: Label for the navigation toggle
+        insert: "after", // String: Insert the toggle before or after the navigation
+        customToggle: "", // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+        jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+        init: function() {}, // Function: Init callback
+        open: function() {}, // Function: Open callback
+        close: function() {} // Function: Close callback
+    });
     </script>
 
     <!-- SCRIPT: jQuery Smooth Scrolling -->
     <script>
-        $(document).on('click', 'a[href^="#"]', function(e) {
-            // target element id
-            var id = $(this).attr('href');
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        // target element id
+        var id = $(this).attr('href');
 
-            // target element
-            var $id = $(id);
-            if ($id.length === 0) {
-                return;
-            }
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
 
-            // prevent standard hash navigation (avoid blinking in IE)
-            e.preventDefault();
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
 
-            // top position relative to the document
-            var pos = $(id).offset().top;
+        // top position relative to the document
+        var pos = $(id).offset().top;
 
-            // animated top scrolling
-            $('body, html').animate({
-                scrollTop: pos
-            }, 800, 'easeInQuad');
-        });
+        // animated top scrolling
+        $('body, html').animate({
+            scrollTop: pos
+        }, 800, 'easeInQuad');
+    });
     </script>
 
 </body>
