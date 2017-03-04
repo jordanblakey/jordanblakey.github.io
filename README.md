@@ -8,5 +8,3 @@ Currently under construction. (1/4/2017)
 
 Available for contract and freelance work.
 
-
-[![Trello Development Board](https://trello.com/b/9BHcUglS.png)](https://trello.com/b/9BHcUglS)
