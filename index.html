@@ -84,16 +84,7 @@
                     <h1>Want to work together?</h1>
                     <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
                     <a class="button-primary modal__trigger" type="submit" data-modal="#modal" name="contact" id="contact">Get started.</a>
-<form method="POST" action="http://formspree.io/jordan@jordanblakey.com">
-  <input type="email" name="email" placeholder="Your email">
-  <select name="select">
-    <option>Partnership</option>
-    <option>Recruitment</option>
-    <option>Freelance Inquiry</option>
-  </select>
-  <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit">Send</button>
-</form>
+
                     <!-- MODAL -->
                     <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
                         <div class="modal__dialog">
@@ -111,26 +102,25 @@
                                     <div class="row">
                                         <div class="six columns">
                                             <label for="your-email">Your Email</label>
-                                            <input class="u-full-width" type="email" name="email" placeholder="you@gmail.com" id="your-email">
+                                            <input type="email" name="email" placeholder="Your email" class="u-full-width" id="your-email">
                                         </div>
                                         <div class="six columns">
                                             <label for="">Contact type?</label>
-                                            <select class="u-full-width" type="text" name="select">
-                                                <option value="Option 1">Recruitment</option>
-                                                <option value="Option 2">Partnership Opportunity</option>
-                                                <option value="Option 3">Freelance Inquiry</option>
+                                            <select name="select" class="u-full-width">
+                                                <option>Partnership</option>
+                                                <option>Recruitment</option>
+                                                <option>Freelance Inquiry</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="column">
                                             <label for="">Ask me anything.</label>
-                                            <textarea name="message" class="u-full-width"></textarea>
+                                            <textarea name="message" placeholder="Your message" class="u-full-width"></textarea>
                                             <button type="submit">Send</button>
                                         </div>
                                     </div>
                                 </form>
-
                                 <!-- modal close button -->
                                 <a href="" class="modal__close demo-close">
                                     &#10006;
