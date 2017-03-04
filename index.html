@@ -152,20 +152,19 @@
     <script>
     $.jribbble.setToken('2e868d0f0e982918df051f4d51abb6f80bcf19886ff34329156806997f262231');
 
-    $.jribbble.users('jordanblakey').likes({
-        per_page: 30
-    }).then(function(likes) {
-        var html = [];
 
-        likes.forEach(function(like) {
-            html.push('<li class="shots--shot">');
-            html.push('<a href="' + like.shot.html_url + '" target="_blank">');
-            html.push('<img src="' + like.shot.images.normal + '">');
-            html.push('</a></li>');
-        });
-
-        $('.shots').html(html.join(''));
-    });
+$.jribbble.users('jordanblakey').shots({per_page: 36}).then(function(shots) {
+  var html = [];
+  
+  shots.forEach(function(shot) {
+    html.push('<li class="shots--shot">');
+    html.push('<a href="' + shot.html_url + '" target="_blank">');
+    html.push('<img src="' + shot.images.normal + '">');
+    html.push('</a></li>');
+  });
+  
+  $('.shots').html(html.join(''));
+});
     </script>
 
     <!-- SCRIPT: Responsive Nav -->
