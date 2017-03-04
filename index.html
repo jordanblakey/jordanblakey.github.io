@@ -84,7 +84,16 @@
                     <h1>Want to work together?</h1>
                     <p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
                     <a class="button-primary modal__trigger" type="submit" data-modal="#modal" name="contact" id="contact">Get started.</a>
-
+<form method="POST" action="http://formspree.io/jordan@jordanblakey.com">
+  <input type="email" name="email" placeholder="Your email">
+  <select name="select">
+    <option>Partnership</option>
+    <option>Recruitment</option>
+    <option>Freelance Inquiry</option>
+  </select>
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
+</form>
                     <!-- MODAL -->
                     <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
                         <div class="modal__dialog">
